@@ -496,7 +496,7 @@ def get_pcdGenPoses(pcdgenpath, argdict={}):
     elif pcdgenpath == 'hemisphere':
         render_poses = generate_seed_hemisphere(argdict['center_depth'])
     else:
-        raise("Invalid pcdgenpath")
+        raise Exception("Invalid pcdgenpath")
     return render_poses
 
 
